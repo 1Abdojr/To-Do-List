@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/style.css">
+            <title>To-Do List</title>
+            <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+            <title>Smart Login</title>
+        </head>
+
+        <body class="">
+
+            <!-- Card -->
+                <div class="container">
+                    <div class="card m-5 p-5">
+                        <div class="container">
+                        <h1 class="text-center mb-5">MY TO-DO LIST</h1>
+                        <div class="input-group mb-3">
+                            <input type="text" id="taskInput" value="" class="form-control" placeholder="Add a new task...">
+                            <div class="input-group-append">
+                                <button class="input-group-text py-3 px-5 text-light" id="addTask">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row filter text-center my-4">
+                            <div class="col-4">
+                            <h5 id="filterAll" class="text-primary">All</h5>
+                            </div>
+                            <div class="col-4">
+                            <h5 id="filterActive" class="text-muted">Active</h5>
+                            </div>
+                            <div class="col-4">
+                            <h5 id="filterCompleted" class="text-muted">Completed</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all">
+                        <!-- <ul class="card task-list p-2 mt-5 mx-3 list-unstyled">
+                        <div class="d-flex justify-content-between mx-3">
+                            <h6 class="">Gym</h6>
+                            <div class="icons d-flex align-items-center">
+                                <i class="fa-solid fa-trash text-danger delete"></i>
+                                <i class="fa-solid fa-check ml-5 text-success done"></i>
+                            </div>
+                        </div>
+                    </ul> -->
+                    </div>
+                </div>
+                </div>
+
+            <script src="js/index.js"></script>
+            <script src="js/bootstrap.bundle"></script>
+        </body>
+    </html>
