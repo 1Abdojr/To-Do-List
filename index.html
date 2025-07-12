@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>My To-Do List</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My To-Do List</title>
 
-            <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-            
-            <!-- Font Awesome CDN -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-dYJ2v63Fq0RZbSbTy5G2kEK9VlLPztuUZQq2CUrSDE6kV7xvT+XUMM4LsD9zZfDWkFfJxfY6wxLzDZ0yS7zZyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
 
-            <!-- Your custom CSS -->
-            <link rel="stylesheet" href="style.css">
-        </head>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-dYJ2v63Fq0RZbSbTy5G2kEK9VlLPztuUZQq2CUrSDE6kV7xvT+XUMM4LsD9zZfDWkFfJxfY6wxLzDZ0yS7zZyg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <body class="">
+  <body>
+    <div class="container">
+      <div class="card m-5 p-4">
+        <h1 class="text-center mb-4">MY TO-DO LIST</h1>
 
-            <!-- Card -->
-                <div class="container">
-                    <div class="card m-5 p-5">
-                        <div class="container">
-                        <h1 class="text-center mb-5">MY TO-DO LIST</h1>
-                        <div class="input-group mb-3">
-                            <input type="text" id="taskInput" value="" class="form-control" placeholder="Add a new task...">
-                            <div class="input-group-append">
-                                <button class="input-group-text py-3 px-5 text-light" id="addTask">Add</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row filter text-center my-4">
-                            <div class="col-4">
-                            <h5 id="filterAll" class="text-primary">All</h5>
-                            </div>
-                            <div class="col-4">
-                            <h5 id="filterActive" class="text-muted">Active</h5>
-                            </div>
-                            <div class="col-4">
-                            <h5 id="filterCompleted" class="text-muted">Completed</h5>
-                            </div>
-                        </div>
-                    </div>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            id="taskInput"
+            class="form-control"
+            placeholder="Add a new task..."
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary px-4" id="addTask">Add</button>
+          </div>
+        </div>
 
-                    <div class="all">
-                        <!-- <ul class="card task-list p-2 mt-5 mx-3 list-unstyled">
-                        <div class="d-flex justify-content-between mx-3">
-                            <h6 class="">Gym</h6>
-                            <div class="icons d-flex align-items-center">
-                                <i class="fa-solid fa-trash text-danger delete"></i>
-                                <i class="fa-solid fa-check ml-5 text-success done"></i>
-                            </div>
-                        </div>
-                    </ul> -->
-                    </div>
-                </div>
-                </div>
+        <!-- Filter -->
+        <div class="row text-center mb-3">
+          <div class="col-4">
+            <h5 id="filterAll" class="text-primary" style="cursor: pointer">
+              All
+            </h5>
+          </div>
+          <div class="col-4">
+            <h5 id="filterActive" class="text-muted" style="cursor: pointer">
+              Active
+            </h5>
+          </div>
+          <div class="col-4">
+            <h5 id="filterCompleted" class="text-muted" style="cursor: pointer">
+              Completed
+            </h5>
+          </div>
+        </div>
 
-            <script src="js/index.js"></script>
-            <script src="js/bootstrap.bundle"></script>
-        </body>
-    </html>
+        <!-- Task List -->
+        <div class="all row justify-content-center"></div>
+      </div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="js/index.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
